@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 exports.meta = {
-  name: "ai",
+  name: "giga",
   aliases: ["chatgpt", "openai"],
   prefix: "both",
   version: "1.0.0",
@@ -15,7 +15,7 @@ exports.onStart = async function({ wataru, msg, chatId, args }) {
   try {
     const question = args.join(" ");
     if (!question) {
-      return await wataru.reply('Please provide a question.');
+      return await wataru.reply('🖐️Hey Ka Giga ano ang maititulong ko sainyo education ba no problem dito lang si Giga tutulongan kita.');
     }
 
     // Build the API URL with the user's question.
